@@ -338,10 +338,10 @@ export default function QuizRendaExtra() {
             </p>
           </div>
 
-          {/* Final CTA - Responsivo */}
+          {/* Final CTA - Responsivo com link */}
           <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
             <Button 
-              onClick={() => window.open('https://ejemplo.com/clase-gratuita', '_blank')}
+              onClick={() => window.open('https://vsl-alpha.vercel.app/', '_blank')}
               className="bg-gradient-to-r from-lime-500 to-emerald-500 hover:from-lime-600 hover:to-emerald-600 text-black font-black text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-auto"
             >
               <span className="mr-2">🚀</span>
