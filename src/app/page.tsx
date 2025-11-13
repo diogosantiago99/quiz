@@ -300,6 +300,8 @@ export default function QuizRendaExtra() {
   // Result Page - ÚLTIMA PÁGINA COM MODIFICAÇÕES SOLICITADAS
   if (currentStep === 11) {
     const result = getResultMessage()
+    // Garantir pontuação mínima de 85
+    const displayScore = Math.max(totalScore, 85)
     
     return (
       <div className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 flex items-center justify-center p-2 sm:p-4">
@@ -322,7 +324,7 @@ export default function QuizRendaExtra() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-2 sm:mb-3">
               <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-green-400" />
               <span className="text-lg sm:text-xl font-bold text-white text-center">
-                Tu Puntuación: {totalScore}/100
+                Tu Puntuación: {displayScore}/100
               </span>
               <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-green-400" />
             </div>
